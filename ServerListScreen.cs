@@ -215,7 +215,7 @@ public class ServerListScreen : mScreen, IActionListener
 		{
 			nCmdPlay = 1;
 		}
-		cmd = new Command[(mGraphics.zoomLevel <= 1) ? (4 + nCmdPlay) : (3 + nCmdPlay)];
+		cmd = new Command[4 + nCmdPlay];
 		int num = GameCanvas.hh - 15 * cmd.Length + 28;
 		for (int i = 0; i < cmd.Length; i++)
 		{

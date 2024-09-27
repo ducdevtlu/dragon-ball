@@ -17,9 +17,6 @@
     <DebugType>none</DebugType>
   </PropertyGroup>
   <ItemGroup>
-    <Folder Include="ControlCenter\" />
-  </ItemGroup>
-  <ItemGroup>
     <Reference Include="UnityEngine">
       <HintPath>..\Dragon ball_240\Dragon ball_240_Data\Managed\UnityEngine.dll</HintPath>
     </Reference>
