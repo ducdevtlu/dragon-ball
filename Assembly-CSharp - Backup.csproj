@@ -7,7 +7,6 @@
   <PropertyGroup>
     <LangVersion>11.0</LangVersion>
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
-    <BaseOutputPath>bin</BaseOutputPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <Optimize>True</Optimize>
@@ -25,6 +24,6 @@
     </Reference>
   </ItemGroup>
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="copy &quot;$(TargetPath)&quot; &quot;C:\Users\DucTran\Desktop\New folder\Dragon ball_240\Dragon ball_240_Data\Managed&quot;" />
+    <Exec Command="copy $(TargetPath) $(SolutionDir)Dragon ball_240\Dragon ball_240_Data\Managed" />
   </Target>
 </Project>
